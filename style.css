@@ -1,0 +1,11 @@
+/* Setup */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Share+Tech+Mono&display=swap');
+* {
+    margin: 0 auto;
+}
+/* Container */
+
+/* Header */
+.form-title {
+    font-family: 'Share Tech Mono', sans-serif;
+}
