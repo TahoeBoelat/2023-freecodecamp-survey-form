@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <title>Mecha Bots Customer Survey</title>
+    <title>Gundam Customer Survey</title>
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <h1 id="title" class="form-title">Mecha Bots Customer Survey</h1>
-            <p id="description" form-description>Please Fill Your Thoughts About Us!</p>
+            <h1 id="title" class="form-title">Gundam Customer Survey</h1>
+            <p id="description" class="form-second-title">Please Fill Your Thoughts About Us!</p>
         </header>
         <form action="#" id="survey-form">
             <div class="label-group">
@@ -28,6 +28,50 @@
                 <label for="number" id="number-label">Age
                     <input type="number" name="number" id="number" min="10" max="99" required placeholder="Insert Your Age" class="form-input">
                 </label>
+            </div>
+            <div class="label-group">
+                <p class="form-second-title">Gundam Type</p>
+                <select name="gundam-type" id="dropdown" class="form-input">
+                    <option disabled selected>Select your Gundam type</option>
+                    <option value="v-gundam">RX-93 v Gundam </option>
+                    <option value="gundam-nt">RX-78NT-1 Gundam NT-1</option>
+                    <option value="gundam-barbatos">ASW -G-08 Gundam Barbatos</option>
+                    <option value="other">Other Gundam</option>
+                </select>
+            </div>
+            <div class="label-group">
+                <p class="form-second-title">Would you recommend our store to your friends?</p>
+                <label for="user-recomendation">
+                    <input type="radio" name="user-recomendation" class="input-radio" checked value="definitely">Definitely
+                </label>
+                <label for="user-recomendation">
+                    <input type="radio" name="user-recomendation" class="input-radio" checked value="maybe">Maybe
+                </label>
+                <label for="user-recomendation">
+                    <input type="radio" name="user-recomendation" class="input-radio" checked value="not-yet">Not Yet
+                </label>
+            </div>
+            <div class="label-group">
+                <p class="form-second-title">What services do we need to improve?</p>
+                <label for="improved-services">
+                    <input type="checkbox" name="improved-services" class="input-checkbox" checked value="Aftersales">Aftersales
+                </label>
+                <label for="improved-services">
+                    <input type="checkbox" name="improved-services" class="input-checkbox" value="weapon-upgrade">Weapon Upgrade
+                </label>
+                <label for="improved-services">
+                    <input type="checkbox" name="improved-services" class="input-checkbox" value="regular-maintenance">Regular Maintenance
+                </label>
+                <label for="improved-services">
+                    <input type="checkbox" name="improved-services" class="input-checkbox" value="pilot-training">Pilot Training
+                </label>
+            </div>
+            <div class="label-group">
+                <p class="form-second-title">Critics and Suggestions</p>
+                <textarea name="critics-and-suggestions" id="comment" class="textbox" placeholder="Give us you thoughts about our products and services"></textarea>
+            </div>
+            <div class="label-group">
+                <input type="submit" value="submit" id="submit">
             </div>
         </form>
     </div>
