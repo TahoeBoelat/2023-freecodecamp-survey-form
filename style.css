@@ -3,8 +3,12 @@
 * {
     margin: 0 auto;
 }
-.form-title {
+.form-title, #description, .submit-btn {
     font-family: 'Share Tech Mono', sans-serif;
+}
+#description {
+    margin-top: 15px;
+    text-align: center;
 }
 .form-second-title{
     font-family: 'Roboto', sans-serif;
@@ -29,9 +33,15 @@
 .form-input {
     width: 550px;
     height: 55px;
-    padding: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 .checkbox-radio-container {
     margin-bottom: 20px;
     margin-left: 20px;
+}
+.submit-btn {
+    width: 125px;
+    height: 35px;
+    text-transform: uppercase;
 }
