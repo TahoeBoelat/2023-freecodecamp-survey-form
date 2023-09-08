@@ -6,20 +6,34 @@
 .form-title {
     font-family: 'Share Tech Mono', sans-serif;
 }
-.form-second-title, body{
+.form-second-title{
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
 }
 /* Container */
 .container {
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-top: 25px;
 }
 /* Header */
 /* Form section */
-.survey-forml {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 25px;
+#survey-form {
+    margin-top: 25px;
+    margin-left: auto;
+}
+.label-group {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.form-input {
+    width: 550px;
+    height: 55px;
+    padding: 5px;
+}
+.checkbox-radio-container {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.input-checkbox {
 }

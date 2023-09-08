@@ -15,63 +15,75 @@
         </header>
         <form action="#" id="survey-form">
             <div class="label-group">
-                <label for="name" id="name-label">Full Name
+                <p class="form-second-title">Full Name</p>
+                <label for="name" id="name-label">
                     <input type="text" id="name" name="name" required placeholder="Insert Your Full Name" class="form-input">
                 </label>
             </div>
             <div class="label-group">
-                <label for="email" id="email-label">Email
+                <p class="form-second-title">Email</p>
+                <label for="email" id="email-label">
                     <input type="email" name="email" id="email" required placeholder="Insert Your Email Address" class="form-input">
                 </label>
             </div>
             <div class="label-group">
-                <label for="number" id="number-label">Age
+                <p class="form-second-title">Age</p>
+                <label for="number" id="number-label">
                     <input type="number" name="number" id="number" min="10" max="99" required placeholder="Insert Your Age" class="form-input">
                 </label>
             </div>
             <div class="label-group">
                 <p class="form-second-title">Gundam Type</p>
-                <select name="gundam-type" id="dropdown" class="form-input">
-                    <option disabled selected>Select your Gundam type</option>
-                    <option value="v-gundam">RX-93 v Gundam </option>
-                    <option value="gundam-nt">RX-78NT-1 Gundam NT-1</option>
-                    <option value="gundam-barbatos">ASW -G-08 Gundam Barbatos</option>
-                    <option value="other">Other Gundam</option>
-                </select>
+                <label for="gundam-type" id="option-label">
+                    <select name="gundam-type" id="dropdown" class="form-input">
+                        <option disabled selected>Select your Gundam type</option>
+                        <option value="v-gundam">RX-93 v Gundam </option>
+                        <option value="gundam-nt">RX-78NT-1 Gundam NT-1</option>
+                        <option value="gundam-barbatos">ASW -G-08 Gundam Barbatos</option>
+                        <option value="other">Other Gundam</option>
+                    </select>
+                </label>
             </div>
             <div class="label-group">
                 <p class="form-second-title">Would you recommend our store to your friends?</p>
-                <label for="user-recomendation">
-                    <input type="radio" name="user-recomendation" class="input-radio" checked value="definitely">Definitely
-                </label>
-                <label for="user-recomendation">
-                    <input type="radio" name="user-recomendation" class="input-radio" checked value="maybe">Maybe
-                </label>
-                <label for="user-recomendation">
-                    <input type="radio" name="user-recomendation" class="input-radio" checked value="not-yet">Not Yet
-                </label>
+                <div class="checkbox-radio-container">
+                    <input type="radio" name="user-recomendation" class="input-radio" checked value="definitely">
+                    <label for="definitely" class="form-second-title">Definitely</label>
+                </div>
+                <div class="checkbox-radio-container">
+                    <input type="radio" name="user-recomendation" class="input-radio" value="maybe">
+                    <label for="maybe" class="form-second-title">Maybe</label>
+                </div>
+                <div class="checkbox-radio-container">
+                    <input type="radio" name="user-recomendation" class="input-radio" value="not-yet">
+                    <label for="not-yet" class="form-second-title">Not Yet</label>
+                </div>
             </div>
             <div class="label-group">
                 <p class="form-second-title">What services do we need to improve?</p>
-                <label for="improved-services">
-                    <input type="checkbox" name="improved-services" class="input-checkbox" checked value="Aftersales">Aftersales
-                </label>
-                <label for="improved-services">
-                    <input type="checkbox" name="improved-services" class="input-checkbox" value="weapon-upgrade">Weapon Upgrade
-                </label>
-                <label for="improved-services">
-                    <input type="checkbox" name="improved-services" class="input-checkbox" value="regular-maintenance">Regular Maintenance
-                </label>
-                <label for="improved-services">
-                    <input type="checkbox" name="improved-services" class="input-checkbox" value="pilot-training">Pilot Training
-                </label>
+                <div class="checkbox-radio-container">
+                    <input type="checkbox" name="improved-services" class="input-checkbox" value="aftersales">
+                    <label for="aftersales" class="form-second-title">Aftersales</label>
+                </div>
+                <div class="checkbox-radio-container">
+                    <input type="checkbox" name="improved-services" class="input-checkbox" value="weapon-upgrade">
+                    <label for="weapon-upgrade" class="form-second-title">Weapon Upgrade</label>
+                </div>
+                <div class="checkbox-radio-container">
+                    <input type="checkbox" name="improved-services" class="input-checkbox" value="regular-maintenance">
+                    <label for="regular-maintenance" class="form-second-title">Regular Maintenance</label>
+                </div>
+                <div class="checkbox-radio-container">
+                    <input type="checkbox" name="improved-services" class="input-checkbox" value="pilot-training">
+                    <label for="pilot-training" class="form-second-title">Pilot Training</label>
+                </div>
             </div>
             <div class="label-group">
                 <p class="form-second-title">Critics and Suggestions</p>
-                <textarea name="critics-and-suggestions" id="comment" class="textbox" placeholder="Give us you thoughts about our products and services"></textarea>
+                <textarea name="critics-and-suggestions" id="comment" class="form-input" placeholder="Give us you thoughts about our products and services"></textarea>
             </div>
             <div class="label-group">
-                <input type="submit" value="submit" id="submit">
+                <input type="submit" value="submit" id="submit" class="submit-btn">
             </div>
         </form>
     </div>
